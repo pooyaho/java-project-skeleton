@@ -1,0 +1,19 @@
+<html ng-app="application">
+<head>
+    <script src="app/lib/js/angular.js"></script>
+    <script src="app/lib/js/angular-resource.js"></script>
+    <script src="app/lib/js/angular-route.js"></script>
+    <script src="app/lib/js/angular-sanitize.js"></script>
+    <script src="app/lib/js/angular-animate.js"></script>
+    <script src="app/js/controllers/MainController.js"></script>
+    <script src="app/js/service/RestClientService.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainController">
+    <input type="text" ng-model="Model.name">
+
+    <button ng-click="Action.sendHello()">Send</button>
+</div>
+</body>
+</html>
